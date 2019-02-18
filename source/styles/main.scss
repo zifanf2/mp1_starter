@@ -85,20 +85,20 @@ nav li {
   text-transform: uppercase;
   transition: all 0.5s;
   cursor: pointer;
-  border: solid red 1px;
+  border: solid #083B65 1px;
   
 }
 
 nav li:hover {
-  background-color: yellow;
+  background-color: #C3CDD6;
 }
 
 #nav-logo:hover {
-  background-color: orange;
+  background-color: #B59377;
 }
 
 .nav-highlight {
-  background-color: coral;
+  background-color: #507491;
 }
 
 .main-div {
@@ -125,13 +125,14 @@ nav li:hover {
   justify-content: center;
   width: 100%;
   height: 50%;
-  background-color: #deadbeaf;
+  background-color: #B3C0CB;
+  opacity: 0.7;
   position: absolute;
   top: 25%;
 }
 
 .intro-div {
-  background: url("https://cdn.pixabay.com/photo/2017/08/12/10/13/background-2633962__340.jpg");
+  background: url("https://images.pexels.com/photos/1011329/pexels-photo-1011329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   color: white;
   text-align: center;
   padding: 3% 10%;
@@ -147,7 +148,7 @@ nav li:hover {
 }
 
 .experience-div {
-  background: url("https://st4.depositphotos.com/6504442/19919/v/1600/depositphotos_199195020-stock-illustration-light-pink-vector-seamless-doodle.jpg");
+  background: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 50%;
   element-align: center;
   padding: 5% 15%;
@@ -208,7 +209,7 @@ nav li:hover {
 }
 
 .works-div {
-  background: url("https://www.freevector.com/uploads/vector/preview/27959/RainbowBackground_Preview_03.jpg");
+  background: url("https://images.pexels.com/photos/163143/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   padding: 10% 5%;
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +219,7 @@ nav li:hover {
 }
 
 .works-item {
-  background: #6b0f9c;
+  background: #65B0F1;
   opacity: 0.4;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
   color: white;
@@ -251,7 +252,7 @@ nav li:hover {
 }
 
 .random-div {
-  background: url("http://mateel.com.co/wp-content/uploads/2018/03/wallpaper-geometric-wallpaper-geometric-pink.jpg");
+  background: url("https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-attachment: fixed;
   padding: 10% 10%;
   height: 500px;
@@ -266,7 +267,6 @@ nav li:hover {
   align-items:center;
   justify-content: center;
   text-align: center;
-  border: 5px outset brown;
 }
 
 .prev,
@@ -342,7 +342,7 @@ nav li:hover {
 }
 
 .end-div {
-  background: url("https://img3.stockfresh.com/files/c/cienpies/m/46/1912947_stock-photo-social-media-bubbles-pattern-background.jpg");
+  background: url("https://images.pexels.com/photos/1011329/pexels-photo-1011329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 30%;
   position: relative;
   padding: 5% 5%;
