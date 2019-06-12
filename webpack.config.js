@@ -6,6 +6,7 @@ const copy = require('copy-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'dist');
 const APP_DIR = path.resolve(__dirname, 'source');
+const ASSET_DIR = path.resolve(__dirname, 'assets');
 
 const config = {
     mode: 'development',
@@ -48,6 +49,12 @@ const config = {
               test: /\.html$/,
               loaders: ['raw-loader'],
             },
+            {
+               test: /\.(png|svg|jpg|gif)$/,
+               use: [
+                 'file-loader'
+               ]
+             }
           ],
     },
 
