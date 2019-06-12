@@ -11,3 +11,4 @@ require('./styles/main.scss');
 
 // Scripts
 require('./scripts/main.js');
+
