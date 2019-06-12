@@ -1,4 +1,4 @@
-var image_path = "assets/image/"
+var image_path = "../../assets/image/"
 var intro_tags = ["University of Illinois at Urbana-Champaign 2016--2020","Data Science Lover","Software Engineer"]
 var exp_jsons = [
   {
