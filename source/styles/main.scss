@@ -1,6 +1,15 @@
+$color-dark1: #6b7a8f;
+$color-dark2: #373737;
+$color-light1: #f7882f;
+$color-light2: #dcc7aa;
+$color-light3: #ffefcf;
+$font-family1: "Courier";
+$font-family2: "Helvetica";
+
 body {
   width: 100%;
 }
+
 
 *,
 *:before,
@@ -17,13 +26,13 @@ body {
 }
 
 .nav-div {
-  border: blue solid 1px;
   background: white;
   top: 0;
   width: 100%;
   transition: 0.5s;
   position: relative;
   z-index: 4;
+  box-shadow: 0px 5px 11px 0px #000;
 }
 
 .nav-fix nav {
@@ -74,31 +83,33 @@ nav ul {
 
 .nav-fix #nav-logo {
   max-width: 500px;
+  flex: 1;
 }
 
 nav li {
-  flex: 1;
+  flex: 2;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   transition: all 0.5s;
-  cursor: pointer;
-  border: solid #083B65 1px;
-  
+  cursor: pointer;  
+  font-family: $font-family1;
+  font-weight: normal;
 }
 
 nav li:hover {
-  background-color: #C3CDD6;
+  font-weight: bold;
 }
 
 #nav-logo:hover {
-  background-color: #B59377;
+  background-color: $color-light2;
 }
 
 .nav-highlight {
-  background-color: #507491;
+  background-color: $color-dark1;
+  font-weight: bold;
 }
 
 .main-div {
@@ -132,23 +143,34 @@ nav li:hover {
 }
 
 .intro-div {
-  background: url("https://images.pexels.com/photos/1011329/pexels-photo-1011329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  color: white;
-  text-align: center;
-  padding: 3% 10%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: $font-family2;
 }
 
-.intro-div p {
-  margin: auto;
-  font-size: 16px;
-  font-family: "Libre Baskerville", serif;
-  text-align: center;
-  text-padding-top: 20px;
+.intro-name {
+  flex: 1.5;
+  font-size: 50px;
 }
 
+.intro-tags:before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.intro-tags {
+  flex: 1;
+}
+.intro-tags h6 {
+  margin: 5% 0 5% 5%;
+  font-size: 15px;
+}
 .experience-div {
-  background: url("https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("http://ismki.org/wp-content/uploads/2018/04/gray-geometric-background.jpg");
   height: 50%;
   element-align: center;
   padding: 5% 15%;
@@ -170,9 +192,10 @@ nav li:hover {
 
 .experience-block img {
   flex: 2;
-  width: 100%;
-  height: 100%;
-  margin: auto;
+   height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
 }
 
 .experience-info {
@@ -182,77 +205,104 @@ nav li:hover {
 }
 
 .experience-company {
-  color: #d04764;
-  font-family: "Lobster", cursive;
-  font-size: 36px;
-  font-weight: normal;
+  color: #000;
+  font-family: $font-family1, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 48px;
   text-shadow: 1px 0 0 #fff;
 }
 
 .experience-title {
-  color: #a7e8f8;
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 32px;
-  margin: 0 0 24px;
-  text-shadow: 1px 1px 1px #082b34;
+  color: $color-light1;
+  font-family: $font-family2, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 1%;
+}
+
+.experience-location {
+  color: $color-dark1;
+  font-family: $font-family2, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 1%;
 }
 
 .experience-description {
-  color: #333;
-  font-family: "Original Surfer", cursive;
+  color: $color-dark2;
+  font-family:  $font-family1, sans-serif;
   font-size: 16px;
   line-height: 28px;
-  margin: 0 0 24px;
+  margin: 0 0 5%;
 }
 
 .works-div {
-  background: url("https://images.pexels.com/photos/163143/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: $color-dark1;
   padding: 10% 5%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
+  position: relative;
 }
 
 .works-item {
-  background: #65B0F1;
-  opacity: 0.4;
+  background: $color-light2;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-  color: white;
+  color: $color-dark2;
   display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   font-size: 20px;
   background-size: cover;
   background-position: center;
-  flex: 1;
-  flex-direction: column;
-  min-width: 100px;
-  margin: 5px;
-  width: 180px;
+  margin: 4%;
   height: 200px;
   padding-top: 10%;
   padding-bottom: 2%;
   transition: 0.6s ease;
   z-index: 1;
+  border-radius: 5%;
+  box-shadow: -1px 3px 1px 1px;
+  font-family: $font-family1;
 }
+
 .works-item:hover {
   opacity: 1;
+  background: $color-light3;
+  color: $color-dark2;
+  box-shadow: -1px 3px 1px 1px;
+  box-shadow: -3px 6px 2px 3px;
 }
 
 .works-title {
+  font-size: 24px;
 }
 
 .works-area {
   font-style: italic;
 }
 
+@media only screen and (max-width: 800px) {
+  .works-div {
+  padding: 10% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  }
+  .works-item {
+  width: 160px;
+  }
+}
+
 .random-div {
-  background: url("https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("http://ismki.org/wp-content/uploads/2018/04/gray-geometric-background.jpg");
   background-attachment: fixed;
   padding: 10% 10%;
   height: 500px;
@@ -339,13 +389,16 @@ nav li:hover {
 }
 .random-carousel-active img{
   margin: 5px;
+  height: 100%;
 }
 
 .end-div {
-  background: url("https://images.pexels.com/photos/1011329/pexels-photo-1011329.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: $color-dark1;
   height: 30%;
   position: relative;
-  padding: 5% 5%;
+  padding: 0% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .end-social-media {
@@ -360,8 +413,7 @@ nav li:hover {
   font-size: 35px;
   line-height: 160px;
   font-weight: normal;
-  margin-bottom: 0px;
-  margin-top: 40px;
+  margin: 0px;
   text-shadow: 0 3px 3px #999;
 }
 .end-social-media i {
@@ -384,15 +436,20 @@ nav li:hover {
   width: 50%;
   opacity: 0;
   position: absolute;
+  margin: auto;
   z-index: 3;
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  right: 0;
+  border-radius: 5%;
+  top: 50%;
+  transform: scale(0);
 }
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transform: scale(1) translateY(-50%);
+  transition: visibility 0.3s, opacity 0.25s 0s, transform 0.3s, width 2s, height 4s;
   
 }
 

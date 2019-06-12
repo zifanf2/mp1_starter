@@ -1,49 +1,128 @@
+var image_path = "../../assets/image/"
+var intro_tags = ["University of Illinois at Urbana-Champaign 2016--2020","Data Science Lover","Software Engineer"]
 var exp_jsons = [
   {
-    company: "Moon",
-    title: "Mooncake Maker",
-    location: "FAAAAAAAAaaaaaAAAAAR",
+    company: "Jump Trading",
+    title: "Software Engineer Intern",
+    location: "Champaign",
+    duration: "Jan 2019 - Present",
+    image: image_path + "jumptrading.png",
     description:
-      "The Moon is humanity’s nearest companion in our travels in space and the only celestial body that we have had the chance to actually visit. Still, despite its relative closeness and familiarity, our satellite continues to hold many interesting secrets. From its scientific strangeness to the many ways it affects our lives, the Moon is a mystery that is definitely worth a closer look."
+      "The main task is to add new features to a trades visualization software with mainly C++. We built a data checker to check if the processed data is consistent with the raw data. The experience improved my ability to understand and utilize other's code in my project, as well as the C++ programming skills."
   },
   {
-    company: "Sleepy Beauty",
-    title: "Waker",
-    location: "Dorms",
+    company: "AARP",
+    title: "Data Science Intern",
+    location: "Champaign",
+    duration: "May 2018 - Dec 2018",
+    image: image_path + "aarp.gif",
     description:
-      "Filled with jealousy, the evil witch Maleficent (Eleanor Audley) curses Princess Aurora (Mary Costa) to die on her 16th birthday. Thanks to Aurora's guardian fairies (Verna Felton, Barbara Jo Allen, Barbara Luddy), she only falls into a deep sleep that can be ended with a kiss from her betrothed, P"
-  }
+      `The first task is Competitor Reputation Analysis. My team scraped public discussion about the companies from twitters and over 20 forums and use NLP to analysize their reputations. The NLP techniques we used includes Sentiment Analysis, Topic Modeling, and Keyword Extraction. The program will be ran regularly to provide insights into ratings of the public.<br/>
+        The second task is adding new features to a chatbot, which was built with RASA and can answer customers' questions. The features I added include processing single sentence with multiple purposes, handle questions that are not included in database, infer unclear addresses, and conduct spell corrections. 
+      `
+  },
+  {
+    company: "Dow AgroScience",
+    title: "Data Science Intern",
+    location: "Champaign",
+    duration: "Jan 2018 - May 2018",
+    image: image_path + "dow.png",
+    description:
+      "The project focused on preprocessing the data with python for later usage with machine learning. We classified the types of proteins with machine learning method, and show how a new method of extracting protein has improved the performance."
+  },
+  {
+    company: "Cline Center for Advanced Social Research",
+    title: "Data Science Intern",
+    location: "Champaign",
+    duration: "Oct 2017 - May 2018",
+    image: image_path + "clinecenter.png",
+    description:
+      "This is the first project to introduce me to NLP. We analysized how opinions and attitudes about the Haiti Disease have changed along the time. The techinques and apis we used include Word of Bag, CoreNLP, etc."
+  },
+  {
+    company: "International Student and Scholar Services",
+    title: "Multicultural Intern",
+    location: "Champaign",
+    duration: "Aug 2017 - May 2018",
+    image: image_path + "isss.jpg",
+    description:
+      "We aimed to help international students better adapt to the new environment in US by holding various events, such as presentations, cultural showcase etc. We also created new programs to better educate university staff about how to communicate with and assist international students better."
+  },
+  {
+    company: "UIUC NetMath",
+    title: "Student Mentor",
+    location: "Champaign",
+    duration: "May 2017 - Oct 2017",
+    image: image_path + "netmath.png",
+    description:
+      "As a mentor of 14 students, I need to make sure to they are in pace with the class with weekly communication, grade their assignments, and answer both academic and logistic questions about the class. The experience teach me how to encourage and guide beginners to code."
+  },
 ];
 
 var work_jsons = [
   {
-    title: "Amazon Review Analyze",
-    area: "NLP",
-    detail: "but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, b"
+    title: "Ultimate Frisbee Score Helper",
+    area: "Mobile App (React Native)",
+    detail: "An app that keep track of points of games and present visualization of data in the view of coach and players."
+  },
+  {
+    title: "Trip Planner",
+    area: "React, Google Firebase Firestore, Amazon AWS",
+    detail: "Web app that assists users to plan their trips"
+  },
+  {
+    title: "Auto-driving Emulator",
+    area: "IoT",
+    detail: "Utilize camera, RaspberryPi, Ultrasonic distance sensor, Arduinos to emulate the object detection functionality in auto-driving."
+  },
+   {
+    title: "Number of People V.S. Air Quality",
+    area: "IoT",
+    detail: "Utilize ESP8266, RaspberryPi, xbees, Arduinos, MQ135 to see if the number of people (detected with ESP8266, a wifi module) and the concentration of CO2 (measured with MQ135)."
+  },
+  {
+    title: "Take-A-Break Reminder",
+    area: "IoT, React Native, Amazon AWS",
+    detail: "Build an app and a watch that remind people to do exercise if they haven't walk for enough steps within 60 minutes. The watch consists of an arduino, a vibration motor, and an accelerometor ADXL335. The server is hosted on Amazon AWS EC2"
+  },
+  {
+    title: "Amazon Clothes Review Analyze",
+    area: "NLP, Python",
+    detail: "Scrape amazon clothes reviews and perform keyword extractions to summarize the features of product into different categories"
   },
   {
     title: "Auto-Translate App",
     area: "Android development",
-    detail: " editors like MS Word or Lotus Notes generate random lorem text when needed, either as pre-installed module or plug-in to be added. Word selection or sequence don't necessarily match the original, which is intended to add variety. Presentation software like Keynote or Pages use it as a samples for screenplay layout. Content management software as Joomla, Drupal, Mambo"
+    detail: " Support users chatting with different languages with real time translation"
   },
   {
     title: "Data Processing App",
     area: "R Shiny App",
-    detail: " and potentially serious design flaws. A seemingly elegant design can quickly begin to bloat with unexpected content or break under the weight of actual activity. Fake data can ensure a nice looking layout but it doesn’t reflect what a living, breathing a"
+    detail: "An app written in R that visualizes and analyzes user's uploaded data automatically."
   },
   {
-    title: "UIUC Gender Visualization",
-    area: "D3.js",
-    detail: " professional use templating systems. Commercial publishing platforms and content management systems ensure that you can show different text, different data using the same template. When it's about controlling hundreds of articles, product pages for web shops, or user profiles in social networks, al"
+    title: "Wikipedia Movie-Actor Visualization",
+    area: "Ruby, D3.js",
+    detail: "Utilize Ruby to scrape information of actors and the relevant movies, and the corresponding actors, and visulaize the relations with D3.js"
   },
-  {
-    title: "Space Invader",
-    area: "C++",
-    detail: "lient to pay no attention Lorem Ipsum isn't hard as it doesn’t make sense in the first place, that will limit any initial interest soon enough. Try telling a client to ignore draft copy however, and you're up to something you can't win. Whenever draft copy comes up in a meeting confused questions about it ensue. editors like MS Word or Lotus Notes generate random lorem text when needed, either as pre-installed module or plug-in to be added. Word selection or sequence don't necessarily match the original, which is intended to add variety. Presentation software like Keynote or Pages use it as a samples for screenplay layout. Content management software as Joomla, Drupal, Mambo"
-  }
 ];
 
-var intro_div = document.querySelector(".intro-div");
+var random_json = [
+{
+  title: "Ultimate Frisbee",
+  images: [image_path + "ultimate1.png", image_path + "ultimate2.jpg", image_path + "ultimate3.jpg"],
+},
+{
+  title: "Cooking",
+  images: [image_path + "cooking1.png", image_path + "cooking2.png", image_path + "cooking3.png", image_path + "cooking4.png", image_path + "cooking5.png"],
+},
+{
+  title: "Travel",
+  images: [image_path + "travel1.png", image_path + "travel2.png", image_path + "travel3.png", image_path + "travel4.png"]
+}
+]
+
+var intro_div = document.querySelector(".main-info");
 var experience_div = document.querySelector(".experience-div");
 var works_div = document.querySelector(".works-div");
 var random_div = document.querySelector(".random-div");
@@ -54,12 +133,25 @@ var site_wrap = document.querySelector(".site-wrap");
 var nav = document.querySelector(".nav-div");
 
 carousel.addEventListener("click", console.log("random-carousel-inner"));
+
+function modify_intro_block(intro_tags, intro_div) {
+  let intro_tags_html = "";
+  for(let i = 0; i < intro_tags.length; i++){
+    intro_tags_html += `<h6>${intro_tags[i]}</h6>`
+  }
+  
+  intro_div.innerHTML = `<div class="intro-div">
+                      <h1 class="intro-name" >Zifan Feng</h1>
+                      <div class="intro-tags">${intro_tags_html}</div>
+                      </div>`
+} 
+
 function add_experience_block(exp_jsons, experience_div) {
   exp_jsons.map(exp_json => {
     let new_exp = document.createElement("DIV");
     new_exp.innerHTML = `
       <div class="experience-block">
-      <img src="https://picsum.photos/200/300random">
+      <img src=${exp_json.image}>
       <div class="experience-info">
         <div class="experience-company">
             ${exp_json.company}
@@ -94,34 +186,31 @@ function add_work_block(works_jsons, works_div) {
   });
 }
 
-function add_random_carousal(random_div) {
-  for (var i = 0; i < 5; i++) {
+function add_random_carousal(random_div,random_json) {
+  for (var i = 0; i < random_json.length; i++) {
     let new_carousal = document.createElement("DIV");
+    let cur_data = random_json[i];
     new_carousal.classList.add("random-carousel-item");
     if (i==0)
        new_carousal.classList.add("random-carousel-active");
+    let images = '';
+    for (var j = 0; j < cur_data.images.length; j++) {
+      images = `${images}<img src=${cur_data.images[j]}/>`
+    }
     new_carousal.innerHTML = `
       <div class="random-carousel-imgs">
-       <img src="https://picsum.photos/${getRandomInt(3) + 2}00/${getRandomInt(
-      3
-    ) + 2}00random" alt="Los Angeles"/>
-<img src="https://picsum.photos/${getRandomInt(3) + 2}00/${getRandomInt(
-      3
-    ) + 2}00random" alt="Los Angeles"/>
-      <img src="https://picsum.photos/${getRandomInt(3) + 2}00/${getRandomInt(
-      3
-    ) + 2}00random" alt="Los Angeles"/>
+       ${images}
       </div>
-       
-        <p>Caption ${i}</p>
+        <p>${cur_data.title}</p>
     `;
     carousel.append(new_carousal);
   }
 }
 
-
+modify_intro_block(intro_tags, intro_div);
 add_experience_block(exp_jsons, experience_div);
 add_work_block(work_jsons, works_div);
+add_random_carousal(random_div, random_json);
 
 window.plusSlides = function(num) {
   console.log(num);
@@ -140,15 +229,9 @@ window.plusSlides = function(num) {
   slideContainer.dataset.slideidx = nextIdx;
 }
 
-function getRandomInt(max) {
-  let num = Math.floor(Math.random() * Math.floor(max));
-  return num;
-}
-add_random_carousal(random_div);
 
 const logo = document.querySelector("#nav-logo");
 
-const nav_intro = nav.querySelector("#nav-intro");
 const nav_exp = nav.querySelector("#nav-exp");
 const nav_works = nav.querySelector("#nav-works");
 const nav_random = nav.querySelector("#nav-random");
@@ -156,7 +239,7 @@ const nav_contact = nav.querySelector("#nav-contact");
 
 var site_wrapY = site_wrap.offsetTop;
 var navY = nav.offsetTop;
-var introY = intro_div.offsetTop + site_wrapY;
+var introY = main_div.offsetTop + site_wrapY;
 var experienceY = experience_div.offsetTop + site_wrapY;
 var workY = works_div.offsetTop + site_wrapY;
 var randomY = random_div.offsetTop + site_wrapY;
@@ -178,13 +261,6 @@ function toggleFix() {
     // site_wrap.style.paddingTop = 0;
   }
 
-  if (scrollY >= introY && scrollY < experienceY ) {
-    nav_intro.classList.add("nav-highlight");
-    
-  } else {
-    nav_intro.classList.remove("nav-highlight");
-    
-  }
 
   if (scrollY >= experienceY&& scrollY < workY) {
     nav_exp.classList.add("nav-highlight");
@@ -193,7 +269,6 @@ function toggleFix() {
   }
 
   if (scrollY >= workY&& scrollY < randomY ) {
-        console.log(scrollY, randomY, workY);
     nav_works.classList.add("nav-highlight");
   } else {
     nav_works.classList.remove("nav-highlight");
@@ -214,11 +289,9 @@ function toggleFix() {
 }
 window.addEventListener("scroll", toggleFix);
 nav_contact.addEventListener("click", function(e) {
-  console.log(contactY, document.querySelector(".end-div").offsetTop + site_wrapY);
   window.scrollTo({ top: contactY, behavior: "smooth" });
 });
 nav_exp.addEventListener("click", function(e) {
-  console.log("exp", experienceY, experience_div.offsetTop + site_wrapY);
   window.scrollTo({ top: experienceY, behavior: "smooth" });
 });
 nav_works.addEventListener("click", function(e) {
@@ -227,10 +300,6 @@ nav_works.addEventListener("click", function(e) {
 nav_random.addEventListener("click", function(e) {
   window.scrollTo({ top: randomY, behavior: "smooth" });
 });
-nav_intro.addEventListener("click", function(e) {
-  window.scrollTo({ top: introY, behavior: "smooth" });
-});
-
 logo.addEventListener("click", function(e) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
