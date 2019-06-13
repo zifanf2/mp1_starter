@@ -195,7 +195,7 @@ function add_random_carousal(random_div,random_json) {
        new_carousal.classList.add("random-carousel-active");
     let images = '';
     for (var j = 0; j < cur_data.images.length; j++) {
-      images = `${images}<img src=${cur_data.images[j]}/>`
+      images = `${images}<img src=${cur_data.images[j]}>`
     }
     new_carousal.innerHTML = `
       <div class="random-carousel-imgs">
