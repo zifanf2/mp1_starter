@@ -1,6 +1,15 @@
 var image_path = "assets/image/"
-var intro_tags = ["University of Illinois at Urbana-Champaign 2016--2020","Data Science Lover","Software Engineer"]
+var intro_tags = ["University of Illinois at Urbana-Champaign 2016--2021","Software Engineer", "Data Science Lover"]
 var exp_jsons = [
+{
+    company: "Stripe",
+    title: "Software Engineer Intern",
+    location: "San Francisco",
+    duration: "June 2019 - Aug 2019",
+    image: image_path + "stripe.png",
+    description:
+      "It's a great experience, where I not only learn a lot of interesting knowledge (such as how to use git correctly and write maintainable code), but also meet a bunch of friendly and inspiring people, who I can learn a lot from. The project gave me a chance to get more familiar with C++ and java, and learn how to code in them in an effective way. "
+  },
   {
     company: "Jump Trading",
     title: "Software Engineer Intern",
